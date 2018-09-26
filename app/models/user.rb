@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_many :interests, dependent: :destroy
+  has_and_belongs_to_many :interests, dependent: :destroy
 end
