@@ -20,13 +20,7 @@
   <%= @user.premium %>
 </p>
 
-<%
-=begin
-%>
-<%= render 'user_interests', interests: @interests %>
-<%
-=end
-%>
+<%= render 'user_interests', interests: @user.interests %>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
