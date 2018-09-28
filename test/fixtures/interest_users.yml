@@ -6,4 +6,12 @@ one:
 
 two:
   interest: two
+  user: one
+
+three:
+  interest: two
+  user: two
+
+four:
+  interest: three
   user: two

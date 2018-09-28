@@ -1,7 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  content: MyString
+  content: セミの抜け殻集め
 
 two:
-  content: MyString
+  content: 井戸掃除
+
+three:
+  content: ハイパーヨーヨー

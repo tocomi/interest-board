@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  age: 1
-  birthday: 2018-09-25
+  name: 佐々木蔵之介
+  age: 45
+  birthday: 1978-09-25
   premium: false
 
 two:
-  name: MyString
-  age: 1
-  birthday: 2018-09-25
-  premium: false
+  name: 山田孝之
+  age: 31
+  birthday: 1988-09-25
+  premium: true
