@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180926171617) do
+ActiveRecord::Schema.define(version: 20180928094403) do
+
+  create_table "interest_users", force: :cascade do |t|
+    t.integer "interest_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["interest_id"], name: "index_interest_users_on_interest_id"
+    t.index ["user_id"], name: "index_interest_users_on_user_id"
+  end
 
   create_table "interests", force: :cascade do |t|
     t.string "content"
