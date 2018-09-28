@@ -17,6 +17,7 @@
         <td><%= link_to 'Show', interest %></td>
         <td><%= link_to 'Edit', edit_interest_path(interest) %></td>
         <td><%= link_to 'Destroy', interest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Favorite', favorite_interest_path(interest) %></td>
       </tr>
     <% end %>
   </tbody>

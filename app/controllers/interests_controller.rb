@@ -1,5 +1,6 @@
 class InterestsController < ApplicationController
-  before_action :set_interest, only: [:show, :edit, :update, :destroy]
+  before_action :set_interest, only: [:show, :edit, :update, :destroy, :favorite]
+  require_relative '../models/interest_user'
 
   # GET /interests
   # GET /interests.json
@@ -58,6 +59,15 @@ class InterestsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to interests_url, notice: 'Interest was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def favorite
+    interest_user = InterestUser.new({ interest_id: @interest.id, user_id: 1 })
+    if interest_user.save
+      @msg = "favorite success."
+    else
+      @msg = "already registered."
     end
   end
 
