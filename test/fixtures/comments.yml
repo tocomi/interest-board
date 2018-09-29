@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+001:
   user_id: 1
   interest_id: 1
-  content: MyText
+  content: とても好きです！
 
-two:
-  user_id: 1
+002:
+  user_id: 2
   interest_id: 1
-  content: MyText
+  content: いいですよねー
