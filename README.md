@@ -2,8 +2,10 @@
 
 Practice of Rails.
 
+- learn using scaffold.
+
 - make association between model.
 
-- user can post comment about inretests.
+- inplement function to post comment.
 
-- authentication by devise.
+- inplement authentication by devise.
