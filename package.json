@@ -1,5 +1,5 @@
 {
-  "name": "sandbox",
+  "name": "interest_board",
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
