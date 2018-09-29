@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+001:
+  user_id: 1
+  interest_id: 1
+  content: とても好きです！
+
+002:
+  user_id: 2
+  interest_id: 1
+  content: いいですよねー

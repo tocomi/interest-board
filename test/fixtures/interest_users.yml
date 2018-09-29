@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+001:
+  interest_id: 1
+  user_id: 1
+
+002:
+  interest_id: 2
+  user_id: 1
+
+003:
+  interest_id: 2
+  user_id: 2
+
+004:
+  interest_id: 3
+  user_id: 2

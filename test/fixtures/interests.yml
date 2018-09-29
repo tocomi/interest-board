@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+001:
+  id: 1
+  content: セミの抜け殻集め
+
+002:
+  id: 2
+  content: 井戸掃除
+
+003:
+  id: 3
+  content: ハイパーヨーヨー

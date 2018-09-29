@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p><%= @msg %></p>
+<p>
+  <strong>User:</strong>
+  <%= @comment.user.name %>
+</p>
+<p>
+  <strong>Interest:</strong>
+  <%= @comment.interest.content %>
+</p>
+<p>
+  <strong>Content:</strong>
+  <%= @comment.content %>
+</p>
+
+<%= link_to 'Back', interest_path(@interest.id) %>

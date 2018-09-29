@@ -1,24 +1,11 @@
-# README
+# Interest Board
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Practice of Rails.
 
-Things you may want to cover:
+- learn using scaffold.
 
-* Ruby version
+- make association between model.
 
-* System dependencies
+- inplement function to post comment.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- inplement authentication by devise.
