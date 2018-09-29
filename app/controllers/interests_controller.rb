@@ -1,5 +1,6 @@
 class InterestsController < ApplicationController
-  before_action :set_interest, only: [:show, :edit, :update, :destroy, :favorite]
+  before_action :set_interest, only: [:show, :edit, :update, :destroy, :favorite, :post_comment]
+  protect_from_forgery :except => [:post_comment]
   require_relative '../models/interest_user'
 
   # GET /interests
@@ -11,6 +12,7 @@ class InterestsController < ApplicationController
   # GET /interests/1
   # GET /interests/1.json
   def show
+    @comment = Comment.new
   end
 
   # GET /interests/new
@@ -69,6 +71,11 @@ class InterestsController < ApplicationController
     else
       @msg = "already registered."
     end
+  end
+
+  def post_comment
+    @comment = Comment.new({ user_id: 1, interest_id: params[:id], content: params[:comment][:content] })
+    @comment.save
   end
 
   private
