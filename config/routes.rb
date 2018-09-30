@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'interests#index'
+
   resources :interests
   resources :users
 
