@@ -1,15 +1,1 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-001:
-  id: 1
-  name: 佐々木蔵之介
-  age: 45
-  birthday: 1978-09-25
-  premium: false
-
-002:
-  id: 2
-  name: 山田孝之
-  age: 31
-  birthday: 1988-09-25
-  premium: true
