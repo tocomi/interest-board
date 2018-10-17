@@ -74,7 +74,8 @@ class InterestsController < ApplicationController
   end
 
   def post_comment
-    @comment = Comment.new({ user_id: 1, interest_id: params[:id], content: params[:comment][:content] })
+    logger.debug(current_user.inspect())
+    @comment = Comment.new({ user_id: current_user.id, interest_id: params[:id], content: params[:comment][:content] })
     @comment.save
   end
 

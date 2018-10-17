@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
+  root 'interests#index'
+
   resources :interests
-  resources :users
 
   get 'interests/:id/favorite', to: 'interests#favorite', as: 'favorite_interest'
   post 'interests/:id/comment', to: 'interests#post_comment'
