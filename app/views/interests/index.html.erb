@@ -15,7 +15,9 @@
       <tr>
         <td><%= interest.content %></td>
         <td><%= link_to 'Show', interest %></td>
-        <td><%= link_to 'Favorite', favorite_interest_path(interest) %></td>
+        <% if user_signed_in? %>
+          <td><%= link_to 'Favorite', favorite_interest_path(interest) %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

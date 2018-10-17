@@ -65,7 +65,7 @@ class InterestsController < ApplicationController
   end
 
   def favorite
-    interest_user = InterestUser.new({ interest_id: @interest.id, user_id: 1 })
+    interest_user = InterestUser.new({ interest_id: @interest.id, user_id: current_user.id })
     if interest_user.save
       @msg = "favorite success."
     else
